@@ -24,21 +24,29 @@ with DAG(
         df = load_data(data_path)
         acc = train_model(df, model_path)
         return acc
-        
-    ## calling wrapper here so we don't accidentally retrain for model eval.
-    acc = train_model_wrapper("data/breast_cancer.csv", "models/breast_cancer_model.pkl")
     
     def eval_model_wrapper(data_path: str, model_path: str):
         df = load_data(data_path)
         return eval_model(acc)
+        
+    def promote_model_wrapper(data_path: str, model_path: str):
+        pass
 
     train_task = PythonOperator(
         task_id="train_model",
-        python_callable=acc,
+        python_callable=train_model_wrapper,
     )
     eval_task = PythonOperator(
         task_id="eval_model",
         python_callable=eval_model_wrapper,
+        op_kwargs={
+        "model_path": "models/iris_model.pkl",
+        },
+    )
+    
+    promote_task = PythonOperator(
+        task_id="promote_model",
+        python_callable=promote_model_wrapper,
     )
 
-    generate_task >> train_task
+    train_task >> eval_task >> promote_task
