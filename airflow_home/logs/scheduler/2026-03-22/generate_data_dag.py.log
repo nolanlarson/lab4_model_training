@@ -1266,3 +1266,59 @@
 [2026-03-22T23:14:03.950+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:03.949+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-03-22T23:14:03.960+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:03.960+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
 [2026-03-22T23:14:03.989+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 1.452 seconds
+[2026-03-22T23:14:34.145+0000] {processor.py:186} INFO - Started process (PID=13445) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:14:34.146+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:14:34.147+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:34.147+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:14:35.369+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:14:35.381+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:35.381+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:14:35.391+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:35.391+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:14:35.409+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 1.269 seconds
+[2026-03-22T23:15:05.833+0000] {processor.py:186} INFO - Started process (PID=13541) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:15:05.836+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:15:05.839+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:05.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:15:09.167+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:15:09.197+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:09.197+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:15:09.212+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:09.212+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:15:09.260+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 3.443 seconds
+[2026-03-22T23:15:39.904+0000] {processor.py:186} INFO - Started process (PID=13573) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:15:39.905+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:15:39.906+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:39.906+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:15:43.646+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:15:43.682+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:43.682+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:15:43.707+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:43.707+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:15:43.747+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 3.871 seconds
+[2026-03-22T23:16:14.093+0000] {processor.py:186} INFO - Started process (PID=13666) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:16:14.103+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:16:14.104+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:14.104+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:16:16.730+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:16:16.760+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:16.760+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:16:16.788+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:16.787+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:16:16.828+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 2.752 seconds
+[2026-03-22T23:16:47.372+0000] {processor.py:186} INFO - Started process (PID=13695) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:16:47.373+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:16:47.375+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:47.374+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:16:48.600+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:16:48.614+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:48.614+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:16:48.627+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:48.627+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:16:48.643+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 1.276 seconds
+[2026-03-22T23:17:18.826+0000] {processor.py:186} INFO - Started process (PID=13745) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:17:18.826+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:17:18.829+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:18.828+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:17:20.072+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:17:20.086+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:20.086+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:17:20.095+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:20.095+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:17:20.111+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 1.289 seconds
+[2026-03-22T23:17:50.305+0000] {processor.py:186} INFO - Started process (PID=13771) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:17:50.306+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:17:50.307+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:50.307+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:17:51.556+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:17:51.569+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:51.569+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:17:51.579+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:51.579+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:17:51.596+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 1.297 seconds
+[2026-03-22T23:18:21.878+0000] {processor.py:186} INFO - Started process (PID=13880) to work on /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:18:21.879+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py for tasks to queue
+[2026-03-22T23:18:21.881+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:18:21.880+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:18:23.124+0000] {processor.py:925} INFO - DAG(s) 'generate_data_only' retrieved from /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py
+[2026-03-22T23:18:23.137+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:18:23.137+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T23:18:23.147+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:18:23.147+0000] {dag.py:4180} INFO - Setting next_dagrun for generate_data_only to None, run_after=None
+[2026-03-22T23:18:23.165+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/generate_data_dag.py took 1.292 seconds

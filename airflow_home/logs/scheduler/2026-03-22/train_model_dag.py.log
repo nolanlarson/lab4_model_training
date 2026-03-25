@@ -2380,3 +2380,219 @@ Please also refer to the documentation for alternative solver options:
     https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
 [2026-03-22T23:13:51.316+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
 [2026-03-22T23:13:51.333+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 1.356 seconds
+[2026-03-22T23:14:21.812+0000] {processor.py:186} INFO - Started process (PID=13428) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:14:21.814+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:14:21.815+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:21.815+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:14:23.163+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:23.161+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:14:23.170+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:14:23.171+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:14:23.192+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 1.385 seconds
+[2026-03-22T23:14:54.109+0000] {processor.py:186} INFO - Started process (PID=13510) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:14:54.110+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:14:54.111+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:54.110+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:14:57.128+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:14:57.126+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:14:57.140+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:14:57.140+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:14:57.170+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 3.067 seconds
+[2026-03-22T23:15:28.779+0000] {processor.py:186} INFO - Started process (PID=13567) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:15:28.784+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:15:28.787+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:28.786+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:15:33.211+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:15:33.209+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:15:33.225+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:15:33.227+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:15:33.270+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 4.497 seconds
+[2026-03-22T23:16:03.954+0000] {processor.py:186} INFO - Started process (PID=13654) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:16:03.963+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:16:03.968+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:03.965+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:16:07.134+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:07.123+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:16:07.142+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:16:07.143+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:16:07.176+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 3.230 seconds
+[2026-03-22T23:16:37.311+0000] {processor.py:186} INFO - Started process (PID=13685) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:16:37.314+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:16:37.316+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:37.316+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:16:39.515+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:16:39.513+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:16:39.523+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:16:39.525+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:16:39.555+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 2.253 seconds
+[2026-03-22T23:17:09.708+0000] {processor.py:186} INFO - Started process (PID=13735) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:17:09.710+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:17:09.711+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:09.711+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:17:11.031+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:11.028+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:17:11.037+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:17:11.037+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:17:11.053+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 1.349 seconds
+[2026-03-22T23:17:41.203+0000] {processor.py:186} INFO - Started process (PID=13761) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:17:41.204+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:17:41.205+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:41.205+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:17:42.555+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:17:42.553+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:17:42.561+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:17:42.562+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:17:42.575+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 1.377 seconds
+[2026-03-22T23:18:12.699+0000] {processor.py:186} INFO - Started process (PID=13871) to work on /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:18:12.701+0000] {processor.py:914} INFO - Processing file /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py for tasks to queue
+[2026-03-22T23:18:12.702+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:18:12.702+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:18:14.043+0000] {logging_mixin.py:190} INFO - [2026-03-22T23:18:14.041+0000] {dagbag.py:387} ERROR - Failed to import: /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+Traceback (most recent call last):
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py", line 35, in <module>
+    train_task = PythonOperator(
+                 ^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/models/baseoperator.py", line 490, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/airflow/operators/python.py", line 224, in __init__
+    raise AirflowException("`python_callable` param must be callable")
+airflow.exceptions.AirflowException: `python_callable` param must be callable
+[2026-03-22T23:18:14.050+0000] {logging_mixin.py:190} WARNING - /home/ec2-user/environment/lab4_model_training/venv/lib64/python3.12/site-packages/sklearn/linear_model/_logistic.py:469 ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+[2026-03-22T23:18:14.050+0000] {processor.py:927} WARNING - No viable dags retrieved from /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py
+[2026-03-22T23:18:14.067+0000] {processor.py:208} INFO - Processing /home/ec2-user/environment/lab4_model_training/dags/train_model_dag.py took 1.373 seconds
