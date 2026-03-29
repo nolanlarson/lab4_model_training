@@ -1,0 +1,21 @@
+[2026-03-29T21:52:02.619+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-03-29T21:52:02.626+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_training_pipeline_v2.eval_model manual__2026-03-29T21:51:53.690479+00:00 [queued]>
+[2026-03-29T21:52:02.630+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_training_pipeline_v2.eval_model manual__2026-03-29T21:51:53.690479+00:00 [queued]>
+[2026-03-29T21:52:02.631+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2026-03-29T21:52:02.642+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): eval_model> on 2026-03-29 21:51:53.690479+00:00
+[2026-03-29T21:52:02.647+0000] {standard_task_runner.py:72} INFO - Started process 18053 to run task
+[2026-03-29T21:52:02.650+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'ml_training_pipeline_v2', 'eval_model', 'manual__2026-03-29T21:51:53.690479+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/ml_training_pipeline_v2.py', '--cfg-path', '/tmp/tmp582p92pi']
+[2026-03-29T21:52:02.651+0000] {standard_task_runner.py:105} INFO - Job 50: Subtask eval_model
+[2026-03-29T21:52:02.678+0000] {task_command.py:467} INFO - Running <TaskInstance: ml_training_pipeline_v2.eval_model manual__2026-03-29T21:51:53.690479+00:00 [running]> on host ip-172-31-71-51.ec2.internal
+[2026-03-29T21:52:02.729+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='ml_training_pipeline_v2' AIRFLOW_CTX_TASK_ID='eval_model' AIRFLOW_CTX_EXECUTION_DATE='2026-03-29T21:51:53.690479+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-29T21:51:53.690479+00:00'
+[2026-03-29T21:52:02.730+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-03-29T21:52:02.745+0000] {logging_mixin.py:190} INFO - [eval_model] Loaded model from models/breast_cancer_model.pkl
+[2026-03-29T21:52:02.745+0000] {logging_mixin.py:190} INFO - [eval_model] Accuracy from training: 0.9737
+[2026-03-29T21:52:02.745+0000] {logging_mixin.py:190} INFO - [eval_model] Version: 20260329_215153
+[2026-03-29T21:52:02.745+0000] {logging_mixin.py:190} INFO - [eval_model] Saved accuracy to models/metrics.json
+[2026-03-29T21:52:02.746+0000] {python.py:240} INFO - Done. Returned value was: {'version': '20260329_215153', 'run_id': 'manual__2026-03-29T21:51:53.690479+00:00', 'accuracy': 0.9736842105263158}
+[2026-03-29T21:52:02.757+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-03-29T21:52:02.757+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=ml_training_pipeline_v2, task_id=eval_model, run_id=manual__2026-03-29T21:51:53.690479+00:00, execution_date=20260329T215153, start_date=20260329T215202, end_date=20260329T215202
+[2026-03-29T21:52:02.770+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-03-29T21:52:02.783+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-29T21:52:02.787+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

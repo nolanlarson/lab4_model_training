@@ -13,21 +13,26 @@ file_path = os.path.join(
 )
 
 def train_model(df: pd.DataFrame, model_path: str = "models/breast_cancer.pkl"):
-    """Train model and return test split."""
+
     X = df.drop(columns=["target"])
     y = df["target"]
 
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42
+        X, y,
+        test_size=0.2,
+        random_state=42,
+        #stratify=y
     )
 
     clf = LogisticRegression(max_iter=200)
     clf.fit(X_train, y_train)
 
-    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    preds = clf.predict(X_test)
+    acc = accuracy_score(y_test, preds)
+
     joblib.dump(clf, model_path)
 
-    return X_test, y_test
+    return acc, clf
 
 
 def eval_model(X_test, y_test, model_path: str = "models/breast_cancer.pkl") -> float:

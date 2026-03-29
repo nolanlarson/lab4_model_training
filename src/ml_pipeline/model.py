@@ -25,4 +25,4 @@ def train_model(df: pd.DataFrame, model_path: str = "models/iris_model.pkl") -> 
     joblib.dump(clf, model_path)
     print(f"[ml_pipeline.model] Saved model to {model_path}")
 
-    return acc
+    return acc, clf
